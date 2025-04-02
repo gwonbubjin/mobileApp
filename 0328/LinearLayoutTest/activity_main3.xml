@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Grid 버전-->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:padding="24dp"
+    android:alignmentMode="alignMargins"
+    android:rowOrderPreserved="false"
+    android:background="#FFFFFF">
+
+    <!-- 로고 (2칸 전체 사용) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guess"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"
+        android:contentDescription="로고"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 아이디 라벨 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="16sp"
+        android:layout_gravity="start|center_vertical" />
+
+    <!-- 아이디 입력 -->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_columnWeight="1"
+        android:paddingHorizontal="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_gravity="fill_horizontal" />
+
+    <!-- 패스워드 라벨 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="패스워드"
+        android:textSize="16sp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginTop="12dp" />
+
+    <!-- 패스워드 입력 -->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="••••"
+        android:inputType="textPassword"
+        android:layout_columnWeight="1"
+        android:paddingHorizontal="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="12dp" />
+
+    <!-- 로그인 버튼 -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="로그인"
+        android:backgroundTint="#673AB7"
+        android:textColor="#FFFFFF"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- 회원가입 버튼 -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="회원 가입"
+        android:backgroundTint="#9575CD"
+        android:textColor="#FFFFFF"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp" />
+
+    <!-- 메시지 박스 (2칸 전체) -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="221dp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="#F4F4F4"
+        android:padding="12dp"
+        android:text="입력한 내용이 여기에 표시됩니다."
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</GridLayout>
