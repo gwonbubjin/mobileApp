@@ -7,7 +7,7 @@
     android:gravity="center_vertical"
     android:background="#FFFFFF">
 
-    <!-- 텍스트뷰 -->
+    
     <TextView
         android:id="@+id/display"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:padding="20dp"
         android:background="#EEEEEE" />
 
-    <!-- 테이블 레이아웃 -->
+  
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
