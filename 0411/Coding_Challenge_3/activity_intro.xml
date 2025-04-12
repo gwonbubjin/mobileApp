@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3e0">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="축구 소개"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#bf360c"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="축구는 전 세계적으로 가장 인기 있는 스포츠입니다. 두 팀이 공을 상대 팀의 골문에 넣기 위해 경쟁하는 경기입니다. 경기 규칙은 간단하지만 매우 전략적이고 기술이 요구됩니다."
+            android:textSize="16sp"
+            android:textColor="#4e342e" />
+    </LinearLayout>
+</ScrollView>
