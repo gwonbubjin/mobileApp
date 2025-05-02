@@ -34,10 +34,6 @@ Coding Challenge/
 ├── settings.gradle.kts
 └── readme.md
 
-yaml
-복사
-편집
-
 ---
 
 ## 🎮 실행 화면 흐름
@@ -78,8 +74,8 @@ MPAndroidChart 사용:
 // Module: app/build.gradle.kts
 implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 kotlin
-복사
-편집
+
+
 // settings.gradle.kts
 dependencyResolutionManagement {
     repositories {
@@ -90,8 +86,8 @@ dependencyResolutionManagement {
 }
 💬 사용된 프롬프트
 scss
-복사
-편집
+
+
 나는 안드로이드 스튜디오로 설문조사 앱을 만들거야. 폴더 이름은 Survey이고 주제는 자유라 너가 하고싶은 아무거나해도 상관없어.(레포트용) 항목은 10개 이상이여야해. 마지막 화면에는 설문결과를 텍스트와 그래프로 표현하면 좋겠어. 제작과정과 너에게 적은 프롬프트를 깃허브 readme.md에 작성을할꺼야
 🛠 제작 과정 요약
 Java 파일 4개 생성 및 설문 로직 구현
