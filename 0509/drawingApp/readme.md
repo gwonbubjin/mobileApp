@@ -61,7 +61,7 @@ UI	Custom View (Canvas + Path)
 
 🧑‍💻 개발자 정보
 Gwon Bubjin
-📧 Email: your@email.com
+📧 Email: gwonbubjin@gmail.com
 📎 GitHub: github.com/gwonbubjin
 
 이 프로젝트는 최소 기능 중심의 그림판 구조를 통해 SWOT 분석 기반의 기능 설계와 개선 방향 제시를 학습하는 데 중점을 두었습니다.
