@@ -18,14 +18,7 @@
 
 ---
 
-## 🖼 앱 화면 예시
 
-> 아래에 스크린샷을 넣을 수 있습니다. `/images` 폴더에 이미지를 저장한 후 링크로 연결하세요:
-
-```markdown
-![메인화면](images/main.png)
-![할 일 추가 다이얼로그](images/add_task_dialog.png)
-```
 
 ---
 
