@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 앱 전체 테마: AppCompat 사용 -->
+    <style name="Theme.DrawingApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 선택 사항: 메뉴 글자색 변경 -->
+        <item name="popupMenuStyle">@style/AppPopupMenuText</item>
+    </style>
+
+    <!-- 팝업 메뉴 글자색을 검정으로 지정 -->
+    <style name="AppPopupMenuText" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:titleTextColor">@android:color/white</item>
+        <item name="android:subtitleTextColor">@android:color/white</item>
+    </style>
+</resources>
