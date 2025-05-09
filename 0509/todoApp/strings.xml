@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">todoapp</string>
+    <string-array name="priority_array">
+        <item>상</item>
+        <item>중</item>
+        <item>하</item>
+    </string-array>
+</resources>
