@@ -49,9 +49,7 @@ findViewById(R.id.btnSettings).setOnClickListener(v -> {
     startActivity(new Intent(MainActivity.this, SettingsActivity.class));
 });
 🎨 메인화면 레이아웃 (activity_main.xml)
-xml
-복사
-편집
+
 <RelativeLayout>
     <ImageView android:src="@drawable/main_bg" android:scaleType="centerCrop" />
     
@@ -66,9 +64,7 @@ xml
 버튼들은 세로 정렬 후 화면 중앙 정렬
 
 📁 프로젝트 구조
-pgsql
-복사
-편집
+
 CodingChallenge3/
 ├── MainActivity.java
 ├── IntroActivity.java
