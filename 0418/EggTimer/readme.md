@@ -32,9 +32,6 @@
         android:text="알람 설정" />
 </ConstraintLayout>
 🔧 핵심 로직 설명 (MainActivity.java)
-java
-복사
-편집
 mEditText = findViewById(R.id.edit);
 findViewById(R.id.btn).setOnClickListener(view -> {
     String time = mEditText.getText().toString();
@@ -50,9 +47,6 @@ findViewById(R.id.btn).setOnClickListener(view -> {
     }.start();
 });
 🔔 알림(Notification) 생성
-java
-복사
-편집
 NotificationManager manager = getSystemService(NotificationManager.class);
 NotificationChannel channel = new NotificationChannel(
     NOTIFICATION_CHANNEL_ID,
@@ -68,9 +62,6 @@ NotificationCompat.Builder builder = new NotificationCompat.Builder(this, NOTIFI
 
 manager.notify(0, builder.build());
 📁 프로젝트 구조
-pgsql
-복사
-편집
 EggTimer/
 ├── MainActivity.java
 ├── activity_main.xml
