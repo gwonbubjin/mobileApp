@@ -26,17 +26,16 @@ Firebase를 활용하여 사용자 데이터가 실시간으로 저장·관리�
 
 ## 📁 파일 구성
 
-📦 Pilly.zip
-┣ 📂 app/src
-┃ ┣ 📂 java/...
-┃ ┣ 📂 res/layout
-┃ ┣ 📂 res/drawable
-┃ ┣ 📂 res/values
-┣ 📄 AndroidManifest.xml
-┣ 📄 Firebase 설정 파일
-┣ 📄 발표 자막
-┣ 📄 README.md
-
+📦 Pilly.zip  
+┣ 📂 app/src  
+┃ ┣ 📂 java/...  
+┃ ┣ 📂 res/layout  
+┃ ┣ 📂 res/drawable  
+┃ ┣ 📂 res/values  
+┣ 📄 AndroidManifest.xml  
+┣ 📄 Firebase 설정 파일  
+┣ 📄 발표 자막  
+┣ 📄 README.md  
 
 ---
 
@@ -50,8 +49,15 @@ Firebase를 활용하여 사용자 데이터가 실시간으로 저장·관리�
 ## 🎥 발표 자료 보기
 
 📌 이 프로젝트의 전체 발표 자료(영상 포함)는 아래 Canva 링크에서 확인하실 수 있습니다.  
-▶️ **[발표 자료 바로가기 (Canva)터소프트웨어과  
-- 📧 [gwonbubjin@gmail.com](mailto:gwonbubjin@gmail.com)
+▶️ **[발표 자료 바로가기 (Canva)]([https://www.canva.com/design/your-link-here](https://www.canva.com/design/DAGqCygkJOg/MuGvwwjrzUEin-fd9W8irQ/view?utm_content=DAGqCygkJOg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47d71b7db4))**
+
+---
+
+## 👤 개발자 정보
+
+- 🧑‍💻 **이름**: 권법진  
+- 🏫 **소속**: 동의과학대학교 컴퓨터소프트웨어과  
+- 📧 **이메일**: [gwonbubjin@gmail.com](mailto:gwonbubjin@gmail.com)
 
 ---
 
@@ -60,5 +66,3 @@ Firebase를 활용하여 사용자 데이터가 실시간으로 저장·관리�
 - 앱 사용 시 **알림 권한 허용이 필수**입니다.  
 - APK는 **Android 13 (API 33)** 기준으로 빌드되었습니다.  
 - Firebase 연동은 개인 계정 기반으로 되어 있으며, 직접 배포 시 **Firebase 프로젝트 새로 구성**이 필요합니다.
-
----
