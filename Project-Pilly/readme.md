@@ -50,29 +50,7 @@ Firebase를 활용하여 사용자 데이터가 실시간으로 저장·관리�
 ## 🎥 발표 자료 보기
 
 📌 이 프로젝트의 전체 발표 자료(영상 포함)는 아래 Canva 링크에서 확인하실 수 있습니다.  
-▶️ **[발표 자료 바로가기 (Canva)](https://www.canva.com/design/DAGqCygkJOg/MuGvwwjrzUEin-fd9W8irQ/view?utm_content=DAGqCygkJOg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47d71b7db4)**
-
-> 🔗 **주의:** 영상 및 애니메이션은 웹에서만 재생됩니다.  
-> PDF로 다운로드 시에는 미디어가 작동하지 않습니다.
-
----
-
-## 🛠 개발 환경
-
-| 항목           | 내용                                  |
-|----------------|---------------------------------------|
-| IDE            | Android Studio (Arctic Fox 이상)      |
-| 언어           | Java                                  |
-| 데이터베이스   | Firebase Firestore                    |
-| 빌드 도구      | Gradle                                |
-| 테스트 환경     | Android API 33+ (에뮬레이터 및 실제 기기) |
-
----
-
-## 👨‍💼 제작자
-
-- **권법진**  
-- 동의과학대학교 콘텐츠소프트웨어과  
+▶️ **[발표 자료 바로가기 (Canva)터소프트웨어과  
 - 📧 [gwonbubjin@gmail.com](mailto:gwonbubjin@gmail.com)
 
 ---
