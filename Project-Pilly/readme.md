@@ -49,7 +49,7 @@ Firebase를 활용하여 사용자 데이터가 실시간으로 저장·관리�
 ## 🎥 발표 자료 보기
 
 📌 이 프로젝트의 전체 발표 자료(영상 포함)는 아래 Canva 링크에서 확인하실 수 있습니다.  
-▶️ **[발표 자료 바로가기 (Canva)]([https://www.canva.com/design/your-link-here](https://www.canva.com/design/DAGqCygkJOg/MuGvwwjrzUEin-fd9W8irQ/view?utm_content=DAGqCygkJOg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47d71b7db4))**
+▶️ **[발표 자료 바로가기 (Canva)](https://www.canva.com/design/DAGqCygkJOg/MuGvwwjrzUEin-fd9W8irQ/view?utm_content=DAGqCygkJOg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47d71b7db4)**
 
 ---
 
