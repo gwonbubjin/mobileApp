@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 👇 상단/중간 컨텐츠 모두 이 LinearLayout 안에 묶고, weight로 분배 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+        <!-- 상단 타이틀 -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="Pilly"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 버튼 2개 (돌봄 대상자/요청) -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAddTarget"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="+ 돌봄 대상자"
+                android:backgroundTint="#69C088"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnRequest"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="요청관리"
+                android:backgroundTint="#E2F4EB"
+                android:textColor="#69C088"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 안내문구 (입력 안내 → 더 간단히) -->
+        <TextView
+            android:id="@+id/tvGuide"
+            android:text="돌봄 대상자를 추가하고 요청을 보내세요"
+            android:textColor="#888"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 돌봄 대상자 리스트 (RecyclerView, 처음엔 GONE) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTargets"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- 돌봄 대상자 없음 안내 -->
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:text="돌봄 대상자가 없습니다."
+            android:textColor="#B0B0B0"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <!-- 🔥 하단 고정 네비게이션 바 -->
+    <include
+        layout="@layout/layout_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

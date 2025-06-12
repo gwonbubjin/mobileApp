@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--처음화면-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient">
+
+    <!-- 동그란 P 아이콘 -->
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/circle_bg"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:textSize="32sp"
+            android:textColor="#64B586"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Pilly 로고 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilly"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#20888888"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="6"/>
+
+    <!-- 부제목 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신의 건강한 하루 친구"
+        android:textSize="14sp"
+        android:textColor="#EEEEEE"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

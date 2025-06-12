@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- 🔙 상단 툴바 -->
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◀"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:textColor="#374151" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원정보"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#374151"
+        android:layout_toEndOf="@id/tvBack"
+        android:layout_marginStart="12dp"
+        android:layout_alignBaseline="@id/tvBack" />
+
+    <!-- ✅ 이름 줄 (이름 / 값 / 수정 버튼) -->
+    <LinearLayout
+        android:id="@+id/nameRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical">
+
+        <!-- "이름" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="16sp"
+            android:textColor="#374151" />
+
+        <!-- 사용자 이름 -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="24dp"
+            android:text="권법진"
+            android:textSize="16sp"
+            android:textColor="#374151" />
+
+        <!-- ✏ 수정 버튼 -->
+        <LinearLayout
+            android:id="@+id/btnEditName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_button_outline"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingVertical="4dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_edit"
+
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정"
+                android:textColor="#374151"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 📧 이메일 줄 -->
+    <LinearLayout
+        android:id="@+id/emailRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/nameRow"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:textSize="16sp"
+            android:textColor="#374151" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="example@email.com"
+            android:textSize="16sp"
+            android:textColor="#374151" />
+    </LinearLayout>
+
+    <!-- 🔻 회원탈퇴 -->
+    <TextView
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 탈퇴"
+        android:textSize="14sp"
+        android:textColor="#6B7280"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>

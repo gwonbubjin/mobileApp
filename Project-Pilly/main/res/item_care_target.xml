@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp">
+
+    <!-- 상단: 이름/관계/복용률 + 연필 + X -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:src="@drawable/ic_person"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:tint="#333" />
+
+        <TextView
+            android:id="@+id/tvNameRelation"
+            android:text="홍길동(아버지)"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 연필(수정) 아이콘 -->
+        <ImageView
+            android:id="@+id/btnEdit"
+            android:src="@drawable/ic_edit"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="4dp"
+            app:tint="#888"
+            android:contentDescription="수정" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_battery"
+            app:tint="#69C088" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:text="66%"
+            android:textColor="#69C088"
+            android:textStyle="bold"
+            android:layout_marginStart="2dp"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- X(삭제) 아이콘 -->
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:src="@drawable/ic_cancel"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            app:tint="#F45858"
+            android:contentDescription="삭제" />
+    </LinearLayout>
+
+    <!-- 약 목록(여러 개) -> RecyclerView로 변경 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/layoutMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="false"/>
+</LinearLayout>

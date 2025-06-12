@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="14dp"
+    android:background="#F6F6F6"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp"
+    android:gravity="center_vertical">
+
+    <!-- 텍스트 영역 -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvRequestSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보낸 사람: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRequestTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="요청시간"
+            android:textColor="#888"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- 수락 버튼 -->
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="수락"
+        android:textColor="#fff"
+        android:backgroundTint="#6BC48F"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- 거절 버튼 -->
+    <Button
+        android:id="@+id/btnReject"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="거절"
+        android:textColor="#fff"
+        android:backgroundTint="#FF6666"/>
+</LinearLayout>

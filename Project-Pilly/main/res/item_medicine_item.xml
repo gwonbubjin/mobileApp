@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_medicine_item"
+    android:layout_width="wrap_content"
+    android:layout_height="36dp"
+    android:minWidth="68dp"
+    android:gravity="center"
+    android:text="약이름"
+    android:textSize="15sp"
+    android:textColor="#78C15E"
+    android:background="@drawable/bg_medicine_toggle"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"/>

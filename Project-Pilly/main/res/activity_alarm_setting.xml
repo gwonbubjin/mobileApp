@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 🔙 뒤로가기 + 타이틀 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="뒤로가기" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="알림 설정"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1C1C1E"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- 🔔 알림 권한 안내 박스 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F2F7FF"
+            android:padding="20dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            android:elevation="2dp"
+            android:clipToPadding="false">
+
+            <ImageView
+                android:id="@+id/imgAlarm"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_alarm_illustration"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilly 알림 허용"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1C1C1E"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="알림을 허용해야\n약, 복약 알림을 받을 수 있습니다"
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnAlreadyAllowed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ 이미 허용했습니다"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#B0B0B0"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- 📩 마케팅 정보 수신 동의 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="마케팅 정보 수신 동의"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1C1C1E" />
+
+            <Switch
+                android:id="@+id/switchMarketing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이벤트 및 혜택 알림을 제공합니다."
+            android:textSize="14sp"
+            android:textColor="#8E8E93" />
+
+    </LinearLayout>
+</ScrollView>

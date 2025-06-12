@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <!-- 상단 바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="뒤로가기"
+            app:tint="#222222"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="약 시간"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#222222"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- 오전/오후, 시간, 요일 카드 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="2dp"
+                android:padding="18dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_card_shadow">
+
+                <!-- 오전/오후, 시간 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <!-- 오전/오후 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_rounded_selector"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvAm"
+                            android:layout_width="60dp"
+                            android:layout_height="44dp"
+                            android:text="오전"
+                            android:gravity="center"
+                            android:textColor="#45A37F"
+                            android:background="@drawable/bg_selected"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <TextView
+                            android:id="@+id/tvPm"
+                            android:layout_width="60dp"
+                            android:layout_height="44dp"
+                            android:text="오후"
+                            android:gravity="center"
+                            android:textColor="#A9A9A9"
+                            android:background="@android:color/transparent"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <Space android:layout_width="16dp" android:layout_height="0dp"/>
+                    <EditText
+                        android:id="@+id/etHour"
+                        android:layout_width="50dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_time"
+                        android:textColor="#222"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:text=":"
+                        android:gravity="center"
+                        android:textColor="#A9A9A9"
+                        android:textSize="22sp"/>
+                    <EditText
+                        android:id="@+id/etMinute"
+                        android:layout_width="50dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_time"
+                        android:textColor="#222"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="0"/>
+                </LinearLayout>
+
+                <!-- 요일 선택 -->
+                <LinearLayout
+                    android:id="@+id/layoutDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/btnSun"
+                        style="@style/WeekButton"
+                        android:text="일"/>
+                    <TextView
+                        android:id="@+id/btnMon"
+                        style="@style/WeekButton"
+                        android:text="월"/>
+                    <TextView
+                        android:id="@+id/btnTue"
+                        style="@style/WeekButton"
+                        android:text="화"/>
+                    <TextView
+                        android:id="@+id/btnWed"
+                        style="@style/WeekButton"
+                        android:text="수"/>
+                    <TextView
+                        android:id="@+id/btnThu"
+                        style="@style/WeekButton"
+                        android:text="목"/>
+                    <TextView
+                        android:id="@+id/btnFri"
+                        style="@style/WeekButton"
+                        android:text="금"/>
+                    <TextView
+                        android:id="@+id/btnSat"
+                        style="@style/WeekButton"
+                        android:text="토"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- + 약 추가하기 버튼 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:backgroundTint="@null"
+                android:id="@+id/btnAddMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="+ 약 추가하기"
+                android:background="@drawable/bg_btn_green"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="18dp"/>
+
+            <!-- 약 리스트 카드 영역 -->
+            <LinearLayout
+                android:id="@+id/layoutMedicineList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 하단 저장/휴지통 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FAFAFA"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_btn_outline"
+            android:src="@drawable/ic_delete"
+            app:tint="#A9A9A9"
+            android:contentDescription="휴지통"/>
+
+        <Space android:layout_width="16dp" android:layout_height="0dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:backgroundTint="@null"
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="저장하기"
+            android:background="@drawable/bg_btn_green"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</LinearLayout>

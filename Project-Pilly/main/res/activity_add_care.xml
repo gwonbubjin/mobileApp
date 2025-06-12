@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- 상단: 뒤로가기 버튼 + 타이틀 한 줄에 배치 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="뒤로가기"/>
+
+        <TextView
+            android:id="@+id/tvAddCareTitle"
+            android:text="돌봄 요청 보내기"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 아이디 입력 + 버튼 가로 배치 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp">
+
+        <EditText
+            android:id="@+id/etTargetId"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="상대방 아이디 입력"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSendRequest"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="요청"
+            android:backgroundTint="#69C088"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- 안내문구 -->
+    <TextView
+        android:id="@+id/tvRequestGuide"
+        android:text="보낸 요청이 여기에 표시됩니다."
+        android:textColor="#888"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+
+    <!-- 요청 리스트 (초기엔 GONE) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRequests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+    <!-- 요청 없음 안내 -->
+    <TextView
+        android:id="@+id/tvNoRequests"
+        android:text="보낸 돌봄 요청이 없습니다."
+        android:textColor="#B0B0B0"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+</LinearLayout>

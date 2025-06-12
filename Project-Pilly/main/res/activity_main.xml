@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <!-- 상단 로고 인클루드 -->
+    <include layout="@layout/layout_top_logo" />
+
+    <!-- 타이틀/설명 -->
+    <TextView
+        android:id="@+id/tvMainTitle"
+        android:text="약"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvMainDesc"
+        android:text="복용한 약을 선택해 기록할 수 있습니다."
+        android:textSize="14sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 약 리스트 (약이 없으면 안내문구 보여줌) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:clipToPadding="false" />
+
+        <!-- 약이 없을 때 안내 문구 -->
+        <LinearLayout
+            android:id="@+id/layout_empty"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:text="등록된 약 시간이 없습니다."
+                android:textColor="#888"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- (여기엔 버튼 넣지 않음! 버튼은 항상 아래에) -->
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- + 약 시간 추가하기 버튼: 무조건 하단에 고정! -->
+    <Button
+        android:id="@+id/btnAddTime"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:text="＋ 약 시간 추가하기"
+        android:textSize="16sp"
+        android:backgroundTint="#78C15E"
+        android:textColor="#fff" />
+
+    <!-- 하단 네비게이션 인클루드 -->
+    <include layout="@layout/layout_bottom_nav" />
+
+</LinearLayout>

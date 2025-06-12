@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomNav"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center"
+    android:background="#FFF"
+    android:elevation="8dp">
+
+    <!-- 챌린지 -->
+    <LinearLayout
+        android:id="@+id/nav_challenge"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:src="@drawable/ic_challenge"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:text="챌린지"
+            android:textSize="12sp"
+            android:textColor="#888"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 기록 -->
+    <LinearLayout
+        android:id="@+id/nav_record"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:src="@drawable/ic_record"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:text="기록"
+            android:textSize="12sp"
+            android:textColor="#888"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 오늘 -->
+    <LinearLayout
+        android:id="@+id/nav_today"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:src="@drawable/your_png_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:text="오늘"
+            android:textSize="12sp"
+            android:textColor="#78C15E"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 돌봄 -->
+    <LinearLayout
+        android:id="@+id/nav_care"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:src="@drawable/ic_care"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:text="돌봄"
+            android:textSize="12sp"
+            android:textColor="#888"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 내정보 -->
+    <LinearLayout
+        android:id="@+id/nav_profile"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:src="@drawable/ic_profile"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:text="내정보"
+            android:textSize="12sp"
+            android:textColor="#888"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

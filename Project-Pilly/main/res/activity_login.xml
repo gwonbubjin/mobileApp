@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="36dp">
+
+        <!-- 동그란 P 아이콘 -->
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/circle_bg"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#59A983"/>
+        </LinearLayout>
+
+        <!-- Pilly 로고 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilly"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 부제목 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 건강한 하루 친구"
+            android:textSize="14sp"
+            android:textColor="#888"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 아이디 입력 -->
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="아이디"
+            android:background="@drawable/rounded_edittext"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- 비밀번호 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_edittext"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingLeft="14dp"
+                android:textSize="16sp"/>
+
+            <!-- 눈 아이콘 -->
+            <ImageView
+                android:id="@+id/btnPasswordToggle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="6dp"
+                android:src="@drawable/ic_visibility_off"
+                android:contentDescription="비밀번호 보이기/숨기기" />
+        </LinearLayout>
+
+        <!-- 로그인 버튼 -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="로그인"
+            android:textSize="16sp"
+            android:textColor="#FFF"
+            android:background="@drawable/rounded_btn"
+            android:backgroundTint="@null"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            />
+
+        <!-- 하단 메뉴 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textColor="#59A983"
+                android:textSize="14sp"
+                android:paddingEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="14sp"
+                android:textColor="#aaa"
+                android:paddingEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tvFindId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디 찾기"
+                android:textColor="#59A983"
+                android:textSize="14sp"
+                android:paddingEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="14sp"
+                android:textColor="#aaa"
+                android:paddingEnd="8dp" />
+            <TextView
+                android:id="@+id/tvFindPw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 찾기"
+                android:textColor="#59A983"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
