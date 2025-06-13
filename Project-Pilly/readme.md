@@ -24,21 +24,6 @@ Firebase를 활용하여 사용자 데이터가 실시간으로 저장·관리�
 
 ---
 
-## 📁 파일 구성
-
-📦 Pilly.zip  
-┣ 📂 app/src  
-┃ ┣ 📂 java/...  
-┃ ┣ 📂 res/layout  
-┃ ┣ 📂 res/drawable  
-┃ ┣ 📂 res/values  
-┣ 📄 AndroidManifest.xml  
-┣ 📄 Firebase 설정 파일  
-┣ 📄 발표 자막  
-┣ 📄 README.md  
-
----
-
 ## 🔽 앱 다운로드
 
 📥 **[Pilly.zip 다운로드 (Google Drive)](https://drive.google.com/file/d/1ydb2cpfD5-CKIJzn2HpMp2WtInX3PLw0/view?usp=sharing)**  
